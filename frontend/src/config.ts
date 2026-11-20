@@ -3,15 +3,15 @@
  * Edita aquí el nombre, el correo y el número de WhatsApp antes de publicar.
  */
 export const siteConfig = {
-  brandName: 'MI EMPRESA',
+  brandName: 'PERÚ CUEROS',
   brandTagline: 'Marroquinería artesanal',
-  email: 'hola@miempresa.com',
+  email: 'renzoheras141630@gmail.com',
   /** Número en formato internacional sin espacios ni guiones, usado por WhatsApp */
-  whatsappNumber: '5491123456789',
-  whatsappDisplay: '+54 9 11 2345-6789',
+  whatsappNumber: '51977163161',
+  whatsappDisplay: '+51 977 163 161',
   instagramUrl: 'https://instagram.com/',
   facebookUrl: 'https://facebook.com/',
-  location: 'Tu ciudad, Tu país',
+  location: 'Villa El Salvador, Lima, Perú',
   /** URL del API de pedidos. Si no está disponible, el pedido se envía por WhatsApp. */
   apiUrl: 'http://localhost:8000',
 } as const

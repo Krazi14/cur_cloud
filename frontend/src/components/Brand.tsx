@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { siteConfig } from '../config'
+import logoImg from '../assets/logo.png'
 
 interface BrandProps {
   variant?: 'dark' | 'light'
@@ -11,15 +12,16 @@ export default function Brand({ variant = 'dark' }: BrandProps) {
 
   return (
     <a href="#inicio" className="group flex shrink-0 items-center gap-3" aria-label="Ir al inicio">
-      <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl border border-wine-600/25 bg-wine-600/5 transition-transform duration-300 group-hover:scale-105">
+      <span className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-xl border border-wine-600/25 bg-wine-600/5 transition-transform duration-300 group-hover:scale-105"
+      style={{ boxShadow: '0 0 0 1px rgba(255, 255, 255, 0.05)', width: '60px', height: '60px' }}>
         {showFallback ? (
           <span className={`font-display text-xl font-semibold ${light ? 'text-wine-300' : 'text-wine-600'}`}>
             M
           </span>
         ) : (
           <img
-            src="/logo.svg"
-            alt=""
+            src={logoImg}
+            alt="logo"
             className="h-full w-full object-contain p-1"
             onError={() => setShowFallback(true)}
           />

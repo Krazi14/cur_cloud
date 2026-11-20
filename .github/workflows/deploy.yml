@@ -38,7 +38,7 @@ jobs:
       - name: Upload custom folder artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path ./frontend/index.html
+          path ./frontend
 
   deploy:
     environment:

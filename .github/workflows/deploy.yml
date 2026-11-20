@@ -35,7 +35,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build
+        run: |
+          chmod +x node_modules/.bin/* || true
+          npm run build
 
       - name: Upload custom folder artifact
         uses: actions/upload-pages-artifact@v3

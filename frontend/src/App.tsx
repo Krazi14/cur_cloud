@@ -10,6 +10,7 @@ import CheckoutModal from './components/CheckoutModal'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
+import InfoModal from './components/InfoModal'
 import Navbar from './components/Navbar'
 import Process from './components/Process'
 import ProductCatalog from './components/ProductCatalog'
@@ -106,6 +107,8 @@ export default function App() {
 
       <Footer />
       <WhatsAppFloat />
+
+      <InfoModal />
 
       <CartDrawer
         isOpen={isCartOpen}
